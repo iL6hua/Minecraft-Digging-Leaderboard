@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "digging_leaderboard",
+  "version": "${version}",
+  "name": "Digging Leaderboard",
+  "description": "Track and display player block mining statistics with scoreboards",
+  "authors": [
+    "iL6hua"
+  ],
+  "contact": {
+    "email": "c6c606@outlook.com"
+  },
+  "license": "AGPL-3.0",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "digging_leaderboard.ModMain"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
