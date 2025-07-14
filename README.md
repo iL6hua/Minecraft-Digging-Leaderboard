@@ -47,7 +47,6 @@ Minecraft Fabric 模组 | 实时追踪玩家挖掘方块数量 | 自动更新计
     "scoreboardTps": true,			# 显示游戏实时TPS
     "namePrefixBans": []			# 不允许显示的玩家名前瞻（如假人的‘_’）
 }
-
 ```
 <br>
 
