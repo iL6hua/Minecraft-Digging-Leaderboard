@@ -14,17 +14,17 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModMain implements ModInitializer {
     // mod 名字
-    public static String modName = "DiggingScoreboard";
+    public static String modName = "diggingLeaderboard";
     // mod 版本
     public static String modVersion = "1.0";
     //  mod 配置文件存储文件夹
     public static String modConfigDirFile = "./config/" + modName;
     // 配置文件路径
-    public static String configFile = modConfigDirFile + "/Configs.json";
+    public static String configFile = modConfigDirFile + "/configs.json";
     // 挖掘数据文件路径
-    public static String playerBlockRecordsFile = modConfigDirFile + "/PlayersMineRecords.json";
+    public static String playerBlockRecordsFile = modConfigDirFile + "/playersMineRecords.json";
     // UuidToName数据文件路径
-    public static String playerUuidToNameFile = modConfigDirFile + "/PlayersUuidToName.json";
+    public static String playerUuidToNameFile = modConfigDirFile + "/playersUuidToName.json";
 
 
     @Override
