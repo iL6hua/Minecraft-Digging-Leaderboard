@@ -44,8 +44,10 @@ Minecraft Fabric 模组 | 实时追踪玩家挖掘方块数量 | 自动更新计
 {
     "scoreboardName": "§e挖掘榜",		# 挖掘榜计分板显示名称
     "scoreboardPlayerCount": 10,		# 挖掘榜计分板显示玩家人数，只显示前10名（可配置），后面的玩家不显示在计分板上
-    "scoreboardTps": true,			# 显示游戏实时TPS
-    "namePrefixBans": []			# 不允许显示的玩家名前瞻（如假人的‘_’）
+    "scoreboardAutoSaveTime":7200,            # 自动保存数据文件时间（单位/秒）
+    "scoreboardDisplayTps":true,                # 是否显示游戏 TPS
+    "scoreboardDisplaySystemUsage":true,        # 是否显示服务器 CPU 和 Memory 占用
+    "namePrefixBans": []			# 不允许显示的玩家名前缀（如假人的‘_’）
 }
 ```
 <br>
