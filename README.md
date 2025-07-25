@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/Minecraft-1.20.1+-green.svg)
 ![](https://img.shields.io/badge/Fabric_API-0.14.21+-blue.svg)
 ![](https://img.shields.io/badge/Environment-Server-yellow.svg)
-![](https://img.shields.io/badge/Version-v1.0.0+1.20.1-red.svg)
+![](https://img.shields.io/badge/Version-v2.0.0+1.20.1-red.svg)
 
 Minecraft Fabric 模组 | 实时追踪玩家挖掘方块数量 | 自动更新计分板排行榜
 
@@ -40,7 +40,7 @@ Minecraft Fabric 模组 | 实时追踪玩家挖掘方块数量 | 自动更新计
 
 * config.json
 
-```
+```json
 {
     "scoreboardName": "§e挖掘榜",		# 挖掘榜计分板显示名称
     "scoreboardPlayerCount": 10,		# 挖掘榜计分板显示玩家人数，只显示前10名（可配置），后面的玩家不显示在计分板上
