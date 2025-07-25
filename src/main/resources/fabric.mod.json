@@ -14,7 +14,7 @@
   "environment": "server",
   "entrypoints": {
     "main": [
-      "digging_leaderboard.ModMain"
+      "digging_leaderboard.Main"
     ]
   },
   "depends": {
