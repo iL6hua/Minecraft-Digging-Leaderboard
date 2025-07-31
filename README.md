@@ -10,6 +10,7 @@ Minecraft Fabric 模组 | 实时追踪玩家挖掘方块数量 | 自动更新计
 ### Digging Leaderboard 是一款专为 Minecraft Fabric 服务器设计的模组，通过智能统计玩家挖掘行为，在游戏中生成动态计分板排行榜。无论您是服务器管理员还是玩家，都能直观了解玩家活动情况，激发资源采集热情！
 <br>
 
+
 ![](https://github.com/iL6hua/Minecraft-Digging-Leaderboard/blob/main/assets/modeffects.png?raw=true)
 
 (图示：游戏内计分板排行榜效果)
