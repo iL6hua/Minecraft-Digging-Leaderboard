@@ -44,6 +44,9 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    // 添加 OSHI 依赖
+    implementation "com.github.oshi:oshi-core:6.6.0"
+    include "com.github.oshi:oshi-core:6.6.0"
 }
 
 processResources {
