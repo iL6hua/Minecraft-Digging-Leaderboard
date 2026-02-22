@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.11-SNAPSHOT'
+    id 'fabric-loom' version '1.15.4'
     id 'maven-publish'
 }
 
@@ -10,6 +10,14 @@ base {
     archivesName = project.archives_base_name
 }
 
+repositories {
+    mavenCentral()
+    maven { url "https://maven.fabricmc.net/" }
+    maven { url "https://maven.terraformersmc.com/releases/" }
+    maven { url "https://jitpack.io" }
+    maven { url "https://api.modrinth.com/maven" }
+}
+
 loom {
     splitEnvironmentSourceSets()
 
@@ -18,12 +26,6 @@ loom {
             sourceSet sourceSets.main
             sourceSet sourceSets.client
         }
-    }
-}
-
-fabricApi {
-    configureDataGeneration {
-        client = true
     }
 }
 
@@ -55,9 +57,10 @@ processResources {
                 "minecraft_version": project.minecraft_version,
                 "loader_version": project.loader_version
     }
+
 }
 
-def targetJavaVersion = 17
+def targetJavaVersion = 21
 tasks.withType(JavaCompile).configureEach {
     // ensure that the encoding is set to UTF-8, no matter what the system default is
     // this fixes some edge cases with special characters not displaying correctly
@@ -82,9 +85,10 @@ java {
 
 jar {
     from("LICENSE") {
-        rename { "${it}_${project.archivesBaseName}" }
+        rename { "${it}_${project.archives_base_name}" }  // 修正為 archives_base_name
     }
 }
+
 
 // configure the maven publication
 publishing {

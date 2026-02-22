@@ -1,9 +1,12 @@
 # Minecraft Digging Leaderboard
 ![](https://img.shields.io/badge/License-AGPLv3-blue.svg)
 ![](https://img.shields.io/badge/Minecraft-1.20.1+-green.svg)
-![](https://img.shields.io/badge/Fabric_API-0.14.21+-blue.svg)
+![](https://img.shields.io/badge/Minecraft-1.21.11+-green.svg)
+![](https://img.shields.io/badge/Fabric_Loader-0.14.21+-blue.svg)
+![](https://img.shields.io/badge/Fabric_Loader-0.18.4+-blue.svg)
 ![](https://img.shields.io/badge/Environment-Server-yellow.svg)
 ![](https://img.shields.io/badge/Version-v2.0.0+1.20.1-red.svg)
+![](https://img.shields.io/badge/Version-v3.0.0+1.21.11-red.svg)
 
 Minecraft Fabric 模组 | 实时追踪玩家挖掘方块数量 | 自动更新计分板排行榜
 
@@ -20,16 +23,17 @@ Minecraft Fabric 模组 | 实时追踪玩家挖掘方块数量 | 自动更新计
 ## ✨ 核心功能
 * 实时追踪挖掘数据
 * 自动记录玩家挖掘的方块数量
-* 实时TPS显示
+* 实时TPS显示（1.21.11没有）
 <br>
 
 ## ⚙️ 安装指南
-* Minecraft 1.20.1 服务端
-* Fabric Loader 0.14.21+
+* Minecraft 1.20.1 服务端或者1.21.11服务端
+* Fabric Loader 0.14.21+或者0.18.4
 * 无需配置 Client
 <br>
 
-1.下载最新版本 [digging-leaderboard-1.0.0.jar](https://github.com/iL6hua/Minecraft-Digging-Leaderboard/releases)；
+1.Minecraft 1.20.1下载版本 [digging-leaderboard-2.0.0.jar](https://github.com/iL6hua/Minecraft-Digging-Leaderboard/releases)；
+1.1 Minecraft 1.21.11下载版本 [digging-leaderboard-3.0.0.jar](https://github.com/iL6hua/Minecraft-Digging-Leaderboard/releases)；
 
 2.将文件放入服务器 `server/mods` 文件夹；
 
@@ -46,8 +50,8 @@ Minecraft Fabric 模组 | 实时追踪玩家挖掘方块数量 | 自动更新计
     "scoreboardName": "§e挖掘榜",		# 挖掘榜计分板显示名称
     "scoreboardPlayerCount": 10,		# 挖掘榜计分板显示玩家人数，只显示前10名（可配置），后面的玩家不显示在计分板上
     "scoreboardAutoSaveTime":7200,            # 自动保存数据文件时间（单位/秒）
-    "scoreboardDisplayTps":true,                # 是否显示游戏 TPS
-    "scoreboardDisplaySystemUsage":true,        # 是否显示服务器 CPU 和 Memory 占用
+    "scoreboardDisplayTps":true,                # 是否显示游戏 TPS（1.21.11版本没有/已失效）
+    "scoreboardDisplaySystemUsage":true,        # 是否显示服务器 CPU 和 Memory 占用（1.21.11版本没有/已失效）
     "namePrefixBans": []			# 不允许显示的玩家名前缀（如假人的‘_’）
 }
 ```
@@ -72,7 +76,9 @@ Minecraft Fabric 模组 | 实时追踪玩家挖掘方块数量 | 自动更新计
 
 4.功能建议：通过Discussion提出想法
 
-5.Email：c6c606@outlook.com
+5. 1.20.1作者Email：c6c606@outlook.com
+
+6. 1.21.11作者Email：1504273583@qq.com
 
 
 * 在显著位置提供源代码访问
@@ -93,3 +99,5 @@ Minecraft Fabric 模组 | 实时追踪玩家挖掘方块数量 | 自动更新计
 
 ## 🥚番外
 本项目的创作者 [iL6hua](https://github.com/iL6hua/) 是个 JAVA 小白，当时在写这个项目的时候属于第一次学习和使用 JAVA ；希望大佬们看到项目的shi山代码能够轻点喷QwQ。
+
+本项目的1.21.11适配者 [猫小诗CatXiaohi](https://mcddos.top/) 是个 JAVA 小白，当时在适配这个项目的时候属于第一次学习和使用 JAVA ；照着教程一点点来的，编译了100多次，搞了个通宵qwq
