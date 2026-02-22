@@ -1,15 +1,16 @@
-/* Copyright (C) 2025 iL6hua
- * This program is free software: you can redistribute it... */
+// Copyright (C) 2026 iL6hua & 猫小诗CatXiaoShi
 package digging_leaderboard;
 
 import net.fabricmc.api.ModInitializer;
-import digging_leaderboard.tools.ConsoleUtils;
+import net.fabricmc.loader.api.FabricLoader;
+import digging_leaderboard.tools.ConsoleUtils;  // 添加這行導入語句
+import java.nio.file.Path;
 
 public class Main implements ModInitializer {
     // mod 名字
     public static String modName = "diggingLeaderboard";
     // mod 版本
-    public static String modVersion = "2.0";
+    public static String modVersion = "3.0";
     // mod 配置文件存储文件夹
     public static String modConfigDirFile = "./config/" + modName;
     // 配置文件路径
@@ -40,10 +41,6 @@ public class Main implements ModInitializer {
         }
         // 获取 mod 配置
         scoreboard.getConfig();
-        // 注册获取 Tps
-        scoreboard.setScoreboardTps();
-        // 注册获取系统资源使用情况
-        scoreboard.setScoreboardSystemUsage();
         // 注册定时保存方法
         AutoSaveData.saveDataRegularly(playerBlockRecordsFile, playerUuidToNameFile);
         // 注册监听事件

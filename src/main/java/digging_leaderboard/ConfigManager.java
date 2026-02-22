@@ -1,31 +1,27 @@
-/* Copyright (C) 2025 iL6hua
- * This program is free software: you can redistribute it... */
+// Copyright (C) 2026 iL6hua & 猫小诗CatXiaoShi
+
 package digging_leaderboard;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-
+import digging_leaderboard.tools.ConsoleUtils;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
-import digging_leaderboard.tools.ConsoleUtils;
 
 public class ConfigManager {
     public static Map<UUID, Integer> map = new HashMap<>();
     public static Map<String, Object> configMap = new HashMap<>();
     public static Map<UUID, String> uuidToNameMap = new HashMap<>();
 
-    // 创建 mod 配置文件夹
     public boolean modConfigDir(String jsonFilePath) {
         File folder = new File(jsonFilePath);
-        // 判断文件夹是否存在
         if (!folder.exists()) {
             ConsoleUtils.printLog("获取 mod 配置文件存储文件夹失败！", 2);
-            // 文件夹不存在，创建文件夹
             if (folder.mkdirs()) {
                 ConsoleUtils.printLog("生成 mod 配置文件存储文件夹成功！", 1);
                 return true;
@@ -41,13 +37,11 @@ public class ConfigManager {
     public void createConfig(String jsonFilePath) {
         // 创建一个 JSON 对象
         JsonObject jsonObject = new JsonObject();
-        // 默认配置文件配置
+        // 创建一个 JSON 对象
         jsonObject.addProperty("scoreboardName", "§e挖掘榜");
         jsonObject.addProperty("scoreboardPlayerCount", 12);
         jsonObject.addProperty("scoreboardAutoSaveTime", 7200);
-        jsonObject.addProperty("scoreboardDisplayTps", Boolean.TRUE);
-        jsonObject.addProperty("scoreboardDisplaySystemUsage", Boolean.TRUE);
-        // 创建一个空的JsonArray
+
         JsonArray namePrefixBans = new JsonArray();
         // 将namePrefixBans添加到jsonObject中
         jsonObject.add("namePrefixBans", namePrefixBans);
