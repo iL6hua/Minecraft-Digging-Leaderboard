@@ -3,13 +3,16 @@
   "id": "digging_leaderboard",
   "version": "${version}",
   "name": "Digging Leaderboard",
-  "description": "Track and display player block mining statistics with scoreboards",
+  "description": "Track and display player block mining statistics with scoreboards（使用记分板显示玩家挖掘统计信息）",
   "authors": [
-    "iL6hua"
+    "iL6hua",
+    "猫小诗CatXiaoShi"
   ],
   "contact": {
-    "email": "c6c606@outlook.com"
+    "sources": "https://github.com/iL6hua/Minecraft-Digging-Leaderboard",
+    "email": "1504273583@qq.com"
   },
+  "icon": "Logo.png",
   "license": "AGPL-3.0",
   "environment": "server",
   "entrypoints": {
