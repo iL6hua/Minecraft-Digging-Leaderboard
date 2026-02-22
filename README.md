@@ -23,7 +23,7 @@ Minecraft Fabric 模组 | 实时追踪玩家挖掘方块数量 | 自动更新计
 ## ✨ 核心功能
 * 实时追踪挖掘数据
 * 自动记录玩家挖掘的方块数量
-* 实时TPS显示（1.21.11没有）
+* 实时TPS显示
 <br>
 
 ## ⚙️ 安装指南
@@ -50,8 +50,8 @@ Minecraft Fabric 模组 | 实时追踪玩家挖掘方块数量 | 自动更新计
     "scoreboardName": "§e挖掘榜",		# 挖掘榜计分板显示名称
     "scoreboardPlayerCount": 10,		# 挖掘榜计分板显示玩家人数，只显示前10名（可配置），后面的玩家不显示在计分板上
     "scoreboardAutoSaveTime":7200,            # 自动保存数据文件时间（单位/秒）
-    "scoreboardDisplayTps":true,                # 是否显示游戏 TPS（1.21.11版本没有/已失效）
-    "scoreboardDisplaySystemUsage":true,        # 是否显示服务器 CPU 和 Memory 占用（1.21.11版本没有/已失效）
+    "scoreboardDisplayTps":true,                # 是否显示游戏 TPS
+    "scoreboardDisplaySystemUsage":true,        # 是否显示服务器 CPU 和 Memory 占用
     "namePrefixBans": []			# 不允许显示的玩家名前缀（如假人的‘_’）
 }
 ```
